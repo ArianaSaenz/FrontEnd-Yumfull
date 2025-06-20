@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #A5D6A7; 
+}
+
+.container {
+    display: flex;
+    width: 900px; 
+    height: 600px; 
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1); 
+}
+
+.left-section {
+    flex: 1;
+    background-color: #FFFFFF;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.left-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgba(0, 0, 0, 0.1); 
+    transform: rotate(45deg);
+}
+
+.left-section::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.1); 
+    transform: rotate(45deg);
+}
+.left-section {
+    flex: 1;
+    background-color: #FFFFFF;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.center-line {
+    position: absolute;
+    width: 4px;
+    height: 80%;
+    background-color: #479C2D;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.food-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.food-img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+/* Posiciones en triángulo */
+.food-img.top {
+    width:150px;
+    height: 150px;
+    top: 20%;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.food-img.left {
+     width:160px;
+    height: 160px;
+    bottom: 15%;
+    left: 10%;
+}
+
+.food-img.right {
+     width:160px;
+    height: 160px;
+    top: 40%;
+    bottom: 10%;
+    right: 7%;
+}
+
+
+
+.left-section .center-line {
+    position: absolute;
+    width: 200px; 
+    height: 150%; 
+    background-color: #479C2D; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    border-radius: 2px; 
+}
+
+.food-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.food-image {
+    width: 60%;
+    height: auto;
+    border-radius: 50%; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+}
+
+.food-image.top-left {
+    top: 15%;
+    left: 10%;
+    transform: rotate(-10deg);
+}
+
+.food-image.top-right {
+    top: 5%;
+    right: 5%;
+    transform: rotate(5deg);
+    width: 50%; 
+}
+
+.food-image.bottom-center {
+    bottom: 10%;
+    left: 30%;
+    transform: rotate(-5deg);
+    width: 50%; 
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px; 
+}
+
+.right-section h1 {
+    color: #4CAF50; 
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 90%; /* Aumenta el ancho del contenedor */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 120%; 
+    padding: 15px 16px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #E8F5E9;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.form-group input::placeholder {
+    color: #888;
+}
+
+
+.submit-button {
+    width: 110%;
+    padding: 12px;
+    background-color: #479C2D; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; 
+}
+
+.submit-button:hover {
+    background-color: #45a049; 
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%; 
+        height: auto; 
+    }
+
+    .left-section {
+        height: 300px;
+    }
+
+   
+    .food-image {
+        width: 40%; 
+    }
+
+    
+    .food-image.top-left, .food-image.top-right, .food-image.bottom-center {
+        position: relative; 
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        transform: none; 
+        margin: 10px auto; 
+    }
+
+    .right-section {
+        padding: 40px 20px;
+    }
+
+   
+    .form-group, .submit-button {
+        width: 90%;
+    }
+}
