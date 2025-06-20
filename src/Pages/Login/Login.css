@@ -72,7 +72,6 @@ body {
 }
 
 .food-image {
-  width: 60%;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -82,21 +81,22 @@ body {
 .food-image.top-left {
   top: 15%;
   left: 10%;
+  width: 140px;
   transform: rotate(-10deg);
 }
 
 .food-image.top-right {
-  top: 5%;
-  right: 5%;
+  top: 10%;
+  right: 10%;
+  width: 160px;
   transform: rotate(5deg);
-  width: 50%;
 }
 
 .food-image.bottom-center {
   bottom: 10%;
   left: 30%;
+  width: 150px;
   transform: rotate(-5deg);
-  width: 50%;
 }
 
 .right-section {
@@ -160,6 +160,7 @@ body {
   background-color: #45a049;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -171,20 +172,27 @@ body {
     height: 300px;
   }
 
-  .food-image {
-    width: 40%;
+  .food-image.top-left {
+    top: 20px;
+    left: 20px;
+    width: 100px;
   }
 
-  .food-image.top-left,
-  .food-image.top-right,
+  .food-image.top-right {
+    top: 20px;
+    right: 20px;
+    width: 100px;
+  }
+
   .food-image.bottom-center {
     position: relative;
-    top: auto;
+    top: 60px;
     left: auto;
     right: auto;
-    bottom: auto;
+    bottom: 60;
     transform: none;
     margin: 10px auto;
+    width: 100px;
   }
 
   .right-section {

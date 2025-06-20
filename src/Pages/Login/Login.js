@@ -1,6 +1,8 @@
 import React from 'react';
+import fruittoast from './imagenes/fruittoast.png';
+import oatsfruit from './imagenes/oatsfruit.png';
+import pupusas from './imagenes/pupusas.png';
 import './Login.css';
-
 
 function Login() {
   return (
@@ -9,18 +11,18 @@ function Login() {
         <div className="center-line">
           <div className="food-images">
             <img
-              src="https://via.placeholder.com/150/FFD700/000000?text=Food+1"
-              alt="Food Plate 1"
+              src={fruittoast}
+              alt="Fruit Toast"
               className="food-image top-left"
             />
             <img
-              src="https://via.placeholder.com/150/ADFF2F/000000?text=Food+2"
-              alt="Food Plate 2"
+              src={oatsfruit}
+              alt="Oats with Fruit"
               className="food-image top-right"
             />
             <img
-              src="https://via.placeholder.com/150/87CEEB/000000?text=Food+3"
-              alt="Food Plate 3"
+              src={pupusas}
+              alt="Pupusas"
               className="food-image bottom-center"
             />
           </div>

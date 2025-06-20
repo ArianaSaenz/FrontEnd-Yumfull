@@ -10,7 +10,6 @@ function App() {
     <div>
       <BrowserRouter>
 
-        <Store />
 
         <Routes>
           <Route path='/Store' element = {<Store/>} />
