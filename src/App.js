@@ -2,15 +2,13 @@
 import './App.css';
 import Store from './Pages/Store/Store';
 import Progress from './Pages/Progress/Progress';
-import Settings from './Pages/settings/Settings';
+import Settings from './Pages/Settings/Settings';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-
-        <Store />
 
         <Routes>
           <Route path='/Store' element = {<Store/>} />
