@@ -16,17 +16,30 @@ body {
     padding-bottom: 1rem;
 }
 
+.floating-basket {
+    position: absolute;
+    top: -120px;
+    right: -250px;
+    width: 500px;
+    z-index: 10;
+    pointer-events: none;
+    transform: translateX(-950px)
+  }
+  
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    position: relative;
     padding: 1rem;
-}
+  }
+  .menu-icon {
+    position: absolute;
+    left:1.0rem;
+    font-size: 2.0rem;
+  }
+  
 
-.menu-icon {
-    font-size: 1.5rem;
-    cursor: pointer;
-}
 
 .search-bar {
     display: flex;
@@ -34,14 +47,16 @@ body {
     background: white;
     border-radius: 20px;
     overflow: hidden;
+    width: 550px;
+    max-width: 200%;
 }
 
 .search-bar input {
+    flex: 1;
     border: none;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     outline: none;
-    width: 300px;
-}
+  }
 
 .search-bar button {
     background: none;
@@ -64,18 +79,21 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    transform: translateX(700px)
 }
 
-.hero-text p {
+.hero-text p{
     font-size: 2rem;
     line-height: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
+    margin-right: -10rem;
+    transform: translateX(700px);
 }
 
 .hero-image img {
-    width: 200px;
+    width:200px;
 }
 
 .featured {
@@ -108,10 +126,11 @@ body {
 }
 
 .product-card img {
-    width: 60px;
-    height: 60px;
+    width: 250px;
+    height: 250px;
     object-fit: contain;
-    margin-bottom: 0.5rem;
+    margin-bottom: -3rem;
+    margin-top: -2rem;
 }
 
 .product-card h3 {
