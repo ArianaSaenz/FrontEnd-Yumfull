@@ -30,7 +30,7 @@ function Login() {
       </div>
 
       <div className="right-section">
-        <h1>Start the journey 🤩</h1>
+        <h1>Start the journey</h1>
         <div className="form-group">
           <label htmlFor="email">Email</label>
           <input
