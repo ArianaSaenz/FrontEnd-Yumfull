@@ -82,22 +82,22 @@ body {
 }
 
 .food-image.top-left {
-  top: 400px;
-  left: -70px;
-  width: 140px;
+  bottom: 400px;
+  left: -100px;
+  width: 170px;
 }
 
 .food-image.top-right {
   top: 260px;
   left: 100px;
-  width: 160px;
+  width: 190px;
   transform: rotate(5deg);
 }
 
 .food-image.bottom-center {
   bottom: 245px;
-  right: -35%;
-  width: 150px;
+  left: 105px;
+  width: 190px;
 }
 
 .right-section {
