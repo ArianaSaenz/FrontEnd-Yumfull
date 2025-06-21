@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(#C3E38C, #4AC13F);
+ 
+ 
+}
+ 
+.container {
+  margin-top:50px;
+  margin-bottom:50px ;
+  display: flex;
+  width: 1000px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+ 
+.left-section {
+  flex: 1;
+  background-color: #FFFFFF;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+ 
+.left-section::before,
+.left-section::after {
+  content: '';
+  position: absolute;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transform: rotate(45deg);
+}
+ 
+.left-section::before {
+  top: -50px;
+  left: -50px;
+  width: 150px;
+  height: 150px;
+}
+ 
+.left-section::after {
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+  height: 400px;
+}
+ 
+.center-line {
+  position: absolute;
+  width: 200px;
+  height: 170%;
+  background-color: #479C2D;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+ 
+.food-images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+ 
+.food-image {
+  height: auto;
+  border-radius: 50%;
+  position: absolute;
+}
+ 
+.food-image.top-left {
+  bottom: 400px;
+  left: -100px;
+  width: 170px;
+}
+ 
+.food-image.top-right {
+  top: 260px;
+  left: 100px;
+  width: 190px;
+  transform: rotate(5deg);
+}
+ 
+.food-image.bottom-center {
+  bottom: 245px;
+  left: 105px;
+  width: 190px;
+}
+ 
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+ 
+.right-section h1 {
+  color: #4CAF50;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  text-align: center;
+}
+ 
+.form-group {
+  margin-bottom: 20px;
+  width: 70%;
+}
+ 
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+ 
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #E8F5E9;
+  box-sizing: border-box;
+  font-size: 1em;
+  color: #333;
+}
+ 
+.form-group input::placeholder {
+  color: #888;
+}
+ 
+.submit-button {
+  width: 70%;
+  padding: 12px;
+  background-color: #479C2D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+ 
+.submit-button:hover {
+  background-color: #45a049;
+}
+ 
+ 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+  }
+ 
+  .left-section {
+    height: 300px;
+  }
+ 
+  .food-image.top-left {
+    top: 20px;
+    left: 20px;
+    width: 200px;
+  }
+ 
+  .food-image.top-right {
+    top: 20px;
+    right: 20px;
+    width: 200px;
+  }
+ 
+  .food-image.bottom-center {
+    position: relative;
+    top: 60px;
+    left: auto;
+    right: auto;
+    bottom: 60;
+    transform: none;
+    margin: 10px auto;
+    width: 200px;
+  }
+ 
+  .right-section {
+    padding: 40px 20px;
+  }
+ 
+  .form-group,
+  
+.form-group input:focus {
+ outline: none;
+ border-color: #4CAF50;
+ box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+  .submit-button {
+    width: 90%;
+  }
+}
