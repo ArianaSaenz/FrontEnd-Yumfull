@@ -4,6 +4,7 @@ import Login from './Pages/Login/Login';
 import Store from './Pages/Store/Store';
 import Progress from './Pages/Progress/Progress';
 import Settings from './Pages/Settings/Settings';
+import Recipes from './Pages/Recipes/Recipes';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -22,6 +23,7 @@ function App() {
           <Route path='/Progress' element={<Progress />} />
           <Route path='/Settings' element={<Settings />} />
           <Route path='/Login' element={<Login />} />
+          <Route path='/Recipes' element={<Recipes />} />
         </Routes>
 
       </BrowserRouter>
