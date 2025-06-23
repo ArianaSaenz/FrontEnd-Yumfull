@@ -60,14 +60,17 @@ export function Period() {
           <div className="cards">
             <div className="card">
               <img src={salmon} alt="Salmon" />
+              <p>Salmon</p>
               <p>Salmon soothes cramps naturally</p>
             </div>
             <div className="card">
               <img src="banana.png" alt="Banana" />
+              <p>Banana</p>
               <p>Bananas ease digestion and cramps</p>
             </div>
             <div className="card">
               <img src="broccoli.png" alt="Broccoli" />
+              <p>Broccoli</p>
               <p>Broccoli boosts energy and relieves PMS</p>
             </div>
           </div>
@@ -79,14 +82,17 @@ export function Period() {
           <div className="cards">
             <div className="card">
               <img src="candies.png" alt="Sweets and Snacks" />
+              <p>Sweets and Snacks</p>
               <p>Fruit beats candy, it's nutritious and satisfying</p>
             </div>
             <div className="card">
               <img src="soda.png" alt="Alcohol" />
+              <p>Alcohol</p>
               <p>Alcohol worsens period symptoms, avoid it!</p>
             </div>
             <div className="card">
               <img src="spicy.png" alt="Spicy" />
+              <p>Spicy food</p>
               <p>Spicy food balances benefits and discomfort</p>
             </div>
           </div>
