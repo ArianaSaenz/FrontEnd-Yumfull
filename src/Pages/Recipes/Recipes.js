@@ -1,20 +1,20 @@
 import './Recipes.css';
-import salvadorantipico from '../../images/salvadorantipico.png';
-import eggavocado from '../../images/eggavocado.png';
-import fruittoast from '../../images/fruittoast.png';
-import omelette from '../../images/omelette.png';
-import broccolichicken from '../../images/broccolichicken.png';
-import broccolishrimp from '../../images/broccolishrimp.png';
-import chickenvegetable from '../../images/chickenvegetable.png';
-import vegetablepasta from '../../images/vegetablepasta.png';
-import pupusas from '../../images/pupusas.png';
-import tunasalad from '../../images/tunasalad.png';
-import sandwich from '../../images/sandwich.png';
-import avocadotacos from '../../images/avocadotacos.png';
-import yogurtapple from '../../images/yogurtapple.png';
-import oatsfruit from '../../images/oatsfruit.png';
-import granolabar from '../../images/granolabar.png';
-import peanutbuttercookie from '../../images/peanutbuttercookie.png';
+import salvadorantipico from './images/salvadorantipico.png';
+import eggavocado from './images/eggavocado.png';
+import fruittoast from './images/fruittoast.png';
+import omelette from './images/omelette.png';
+import broccolichicken from './images/broccolichicken.png';
+import broccolishrimp from './images/broccolishrimp.png';
+import chickenvegetable from './images/chickenvegetable.png';
+import vegetablepasta from './images/vegetablepasta.png';
+import pupusas from './images/pupusas.png';
+import tunasalad from './images/tunasalad.png';
+import sandwich from './images/sandwich.png';
+import avocadotacos from './images/avocadotacos.png';
+import yogurtapple from './images/yogurtapple.png';
+import oatsfruit from './images/oatsfruit.png';
+import granolabar from './images/granolabar.png';
+import peanutbuttercookie from './images/peanutbuttercookie.png';
 
 
 function Recipes() {
