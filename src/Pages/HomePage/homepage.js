@@ -1,5 +1,5 @@
 import React from "react";
-import plateImage from "./imagenes1/plato_home.png"; 
+import plateImage from "./imagenes1/plato1.png"; 
 import "./homepage.css";
 
 
