@@ -1,4 +1,6 @@
+import React from 'react'
 import { Link } from "react-router-dom"
+
 
 export function NavBar() {
     return (
@@ -32,7 +34,9 @@ export function NavBar() {
                                 Store
                             </Link>
                         </li>
+
                         <li className="nav-item">
+
                             <Link className="nav-link" to="/">
                                 Girl's Spot
                             </Link>
@@ -45,8 +49,9 @@ export function NavBar() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/Progress">
                                 Progress
-                            </Link>
+               </Link>
                         </li>
+
                         <li className="nav-item dropdown">
                             <Link
                                 className="nav-link dropdown-toggle"
