@@ -1,4 +1,5 @@
 import { NavBar } from './NavBar/NavBar';
+
 import './App.css';
 import Login from './Pages/Login/Login';
 import Store from './Pages/Store/Store';
@@ -6,7 +7,11 @@ import Progress from './Pages/Progress/Progress';
 import Settings from './Pages/Settings/Settings';
 import Recipes from './Pages/Recipes/Recipes';
 import Register from './Pages/Register/Register';
+
 import HomePage from './Pages/HomePage/homepage';
+
+import { Period } from './Pages/Period-section/Period';
+
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -28,7 +33,8 @@ function App() {
           <Route path='/Login' element={<Login />} />
           <Route path='/Recipes' element={<Recipes />} />
           <Route path='/Register' element = {<Register/>} />
-          <Route path='/HomePage' element = {<HomePage/>} />
+          <Route path ='/Period' element = {<Period/>} />
+          <Route path ='/HomePage' element = {<HomePage/>} />
         </Routes>
 
       </BrowserRouter>
