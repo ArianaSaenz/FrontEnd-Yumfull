@@ -1,5 +1,7 @@
 import React from "react";
-import plateImage from "./imagenes1/plato_home.png"; // Asegúrate de poner tu imagen aquí
+import plateImage from "./imagenes1/plato_home.png"; 
+import "./homepage.css";
+
 
 function Home() {
   return (
