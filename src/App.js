@@ -6,6 +6,7 @@ import Progress from './Pages/Progress/Progress';
 import Settings from './Pages/Settings/Settings';
 import Recipes from './Pages/Recipes/Recipes';
 import Register from './Pages/Register/Register';
+import Mainpage from './Pages/Mainpage/Mainpage';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -27,6 +28,7 @@ function App() {
           <Route path='/Login' element={<Login />} />
           <Route path='/Recipes' element={<Recipes />} />
           <Route path='/Register' element = {<Register/>} />
+          <Route path='/Mainpage' element = {<Mainpage/>} />
         </Routes>
 
       </BrowserRouter>
