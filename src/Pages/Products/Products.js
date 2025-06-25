@@ -1,5 +1,6 @@
 import React from "react";
 import './Products.css';
+import { useNavigate } from "react-router-dom";
 import brocoli from './Images/brocoli.png';
 import romaine from './Images/romaine lettuce.png';
 import corn from './Images/corn.png';
@@ -7,10 +8,13 @@ import cucumber from './Images/cucumber.png';
 import eggplant from './Images/eggplant.png';
 
 function Products() {
+    const navigate = useNavigate();
     return (
         <div className="product-page">
             <main className="product-main">
-                <button className="back-button">⬅</button>
+                <button className="back-button" onClick={() => navigate("/Store")}>
+                    ← Back
+                </button>
 
                 <section className="product-details">
                     <img src={brocoli} alt='brocoli' />
