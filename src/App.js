@@ -7,6 +7,7 @@ import Settings from './Pages/Settings/Settings';
 import Recipes from './Pages/Recipes/Recipes';
 import Register from './Pages/Register/Register';
 import Products from './Pages/Products/Products';
+import { Period } from './Pages/Period-section/Period';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -29,6 +30,7 @@ function App() {
           <Route path='/Recipes' element={<Recipes />} />
           <Route path='/Register' element = {<Register/>} />
           <Route path='/Products' element = {<Products/>} />
+          <Route path ='/Period' element = {<Period/>} />
         </Routes>
 
       </BrowserRouter>
