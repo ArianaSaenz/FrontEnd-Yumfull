@@ -6,24 +6,24 @@ import './Login.css';
 
 function Login() {
   return (
-    <div className="container">
+    <div className="containerL">
       <div className="left-section">
         <div className="center-line">
           <div className="food-images">
             <img
               src={fruittoast}
               alt="Fruit Toast"
-              className="food-image top-left"
+              className="food-image top-leftL"
             />
             <img
               src={oatsfruit}
               alt="Oats with Fruit"
-              className="food-image top-right"
+              className="food-image top-rightL"
             />
             <img
               src={pupusas}
               alt="Pupusas"
-              className="food-image bottom-center"
+              className="food-image bottom-centerL"
             />
           </div>
         </div>
