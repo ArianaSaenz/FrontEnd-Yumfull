@@ -24,8 +24,8 @@ export function NavBar() {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/Store">
-                                Home acá(falta)
+                            <Link className="nav-link" to="/HomePage">
+                                HomePage
                             </Link>
                         </li>
                         <li className="nav-item">
