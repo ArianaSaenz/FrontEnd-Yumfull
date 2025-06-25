@@ -10,7 +10,7 @@ body {
   
 }
 
-.container {
+.containerL {
   margin-top:50px;
   margin-bottom:50px ;
   display: flex;
@@ -81,23 +81,23 @@ body {
   position: absolute;
 }
 
-.food-image.top-left {
+.food-image.top-leftL {
   bottom: 400px;
   left: -100px;
-  width: 170px;
+  width: 190px;
 }
 
-.food-image.top-right {
+.food-image.top-rightL {
   top: 260px;
   left: 100px;
-  width: 190px;
+  width: 200px;
   transform: rotate(5deg);
 }
 
-.food-image.bottom-center {
-  bottom: 245px;
+.food-image.bottom-centerL {
+  bottom: 250px;
   left: 105px;
-  width: 190px;
+  width: 200px;
 }
 
 .right-section {
@@ -164,6 +164,7 @@ body {
 
 @media (max-width: 768px) {
   .container {
+    display: flexS;
     flex-direction: column;
     width: 95%;
     height: auto;
