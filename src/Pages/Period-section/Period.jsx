@@ -1,6 +1,5 @@
 import './styles.css';
 import { Helmet } from 'react-helmet';
-import salmon from './images/images/salmon.jpg';
 
 export function Period() {
   return (
@@ -59,17 +58,17 @@ export function Period() {
           <h3>What to eat during menstruation?</h3>
           <div className="cards">
             <div className="card">
-              <img src={salmon} alt="Salmon" />
+              <img src="fotosalmon.png" alt="Salmon" />
               <p>Salmon</p>
               <p>Salmon soothes cramps naturally</p>
             </div>
             <div className="card">
-              <img src="banana.png" alt="Banana" />
+              <img src="fotobanana.png" alt="Banana" />
               <p>Banana</p>
               <p>Bananas ease digestion and cramps</p>
             </div>
             <div className="card">
-              <img src="broccoli.png" alt="Broccoli" />
+              <img src="fotobroccoli.png" alt="Broccoli" />
               <p>Broccoli</p>
               <p>Broccoli boosts energy and relieves PMS</p>
             </div>
@@ -81,17 +80,17 @@ export function Period() {
           <h4>What is not recommendable to eat?</h4>
           <div className="cards">
             <div className="card">
-              <img src="candies.png" alt="Sweets and Snacks" />
+              <img src="fotosnacks.png" alt="Sweets and Snacks" />
               <p>Sweets and Snacks</p>
               <p>Fruit beats candy, it's nutritious and satisfying</p>
             </div>
             <div className="card">
-              <img src="soda.png" alt="Alcohol" />
+              <img src="fotoalcohol.png" alt="Alcohol" />
               <p>Alcohol</p>
               <p>Alcohol worsens period symptoms, avoid it!</p>
             </div>
             <div className="card">
-              <img src="spicy.png" alt="Spicy" />
+              <img src="fotospicyfood.png" alt="Spicy" />
               <p>Spicy food</p>
               <p>Spicy food balances benefits and discomfort</p>
             </div>

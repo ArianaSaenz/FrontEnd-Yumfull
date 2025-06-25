@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import React from 'react'
+import { Period } from "../Pages/Period-section/Period"
 
 export function NavBar() {
     return (
@@ -32,11 +33,13 @@ export function NavBar() {
                                 Store
                             </Link>
                         </li>
+
                         <li className="nav-item">
-                            <Link className="nav-link" to="/Progress">
-                                Progress
+                            <Link className="nav-link" to="/Period">
+                                Menstruation
                             </Link>
                         </li>
+
                         <li className="nav-item dropdown">
                             <Link
                                 className="nav-link dropdown-toggle"
