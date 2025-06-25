@@ -24,7 +24,7 @@ export function NavBar() {
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <Link className="nav-link" to="/HomePage">
-                                HomePage7
+                                HomePage
                             </Link>
                         </li>
                         <li className="nav-item">
