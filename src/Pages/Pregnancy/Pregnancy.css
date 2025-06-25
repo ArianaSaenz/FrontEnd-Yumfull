@@ -1,0 +1,256 @@
+.wrapper {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  color: #2c7744;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.content-container {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+  align-items: center;
+  background-color: #C3E38C;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.nutrition-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+ margin-left: 90px;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+ background-color: #C3E38C;
+   
+}
+
+.nutrition-image {
+  background-color: #C3E38C;
+  width: 100%;
+  max-width: 350px;
+  padding: 60px 20px;
+  border-radius: 10px;
+  box-shadow: 30 4px 8px rgba(0,0,0,0.1);
+  color: #C3E38C;
+  font-weight: bold;
+}
+
+.section-content {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-image {
+  height: 400px;
+  background-color: #C3E38C;
+  border-radius: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #C3E38C;
+}
+
+.card-title {
+  color: #2c7744;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card-question {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  border-left: 3px solid #4CAF50;
+}
+
+.section-food {
+  flex: 2;
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  color: #2c7744;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+.section-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.foods-container {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.food-card {
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(187, 216, 154, 0.1);
+  overflow: hidden;
+}
+
+.recommended .food-card {
+  border-top: 5px solid #4CAF50;
+}
+
+.avoid .food-card {
+  border-top: 5px solid #f44336;
+}
+
+.food-image-container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.food-image-container.avocado {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.food-image-container.almonds {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.food-image-container.eggs {
+  background-color: #f5f5f5;
+  color: #616161;
+}
+
+.food-image-container.mortadella {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.food-image-container.tuna {
+  background-color: #e3f2fd;
+  color:#C3E38C;
+}
+
+.food-image-container.alcohol {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.food-name {
+  font-size: 1.3rem;
+  margin: 15px 15px 5px;
+  color: #2c7744;
+}
+
+.avoid .food-name {
+  color: #c62828;
+}
+
+.food-description {
+  font-size: 1rem;
+  margin: 0 15px 15px;
+  color: #555;
+}
+
+.faq-section {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 50px;
+}
+
+.faq-title {
+  color: #2c7744;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-q {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #e8f5e9;
+  border-left: 5px solid #2c7744;
+  border-radius: 5px;
+}
+
+.faq-q-bold {
+  font-weight: bold;
+  color: #2c7744;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.faq-a {
+  color: #333;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .content-container,
+  .section-content {
+    flex-direction: column;
+  }
+
+  .card,
+  .section-food {
+    width: 100%;
+  }
+
+  .nutrition-image {
+    max-width: 100%;
+  }
+}
+
+
+.food-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 60px;
+  
+}
+
