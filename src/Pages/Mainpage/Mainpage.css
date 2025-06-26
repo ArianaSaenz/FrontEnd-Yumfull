@@ -15,7 +15,8 @@ body {
     padding: 50px 5%;
     background-color: #ffffff;
     overflow: hidden;
-    min-height: 650px;
+    min-height: 700px;
+    width: 1480px;
 }
 
 .hero-content {
@@ -58,7 +59,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-left: 70px;
+    padding-left: 300px;
 }
 
 .hero-bowl-image {
@@ -70,15 +71,15 @@ body {
 
 .abstract-shape {
     position: absolute;
-    width: 600px;
-    height: 600px;
-    background-color: #B2FF59;
-    border-radius: 50% 20% 50% 20% / 50% 20% 50% 30%;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%) rotate(-12deg) skew(3deg, 5deg);
+    width: 100%;
+    height: 120%;
+    top: -30px;
+    right: -30%;
+    background-color: #a6e84a;
+    border-radius: 60% 29% 70% 24% / 50% 60% 0% 70%;
     z-index: 1;
-    margin-right: 30000000px;
+    transform: rotate(-12deg) skew(4deg, 3deg);
+    opacity: 0.95;
 }
 
 
@@ -91,7 +92,7 @@ body {
 
 .meal-selection-section h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.8em;
+    font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 15px;
     color: #333;
@@ -158,7 +159,7 @@ body {
     align-items: center;
     padding: 80px 5%;
     background-color: #ffffff;
-    gap: 150px;
+    gap: 170px;
 }
 
 .female-image-container {
@@ -186,7 +187,7 @@ body {
 
 .female-content h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.2em;
+    font-size: 3em;
     color: #4CAF50;
     font-weight: 700;
     margin-bottom: 35px;
@@ -204,7 +205,7 @@ body {
 .btn-yellow {
     background-color: #FFEB3B;
     color: #333;
-    padding: 15px 30px;
+    padding: 10px 30px;
     border: none;
     border-radius: 30px;
     font-size: 1.1em;
@@ -221,7 +222,7 @@ body {
 }
 
 .btn-row p {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #555;
     margin: 0;
     flex: 1;
