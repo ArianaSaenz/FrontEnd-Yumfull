@@ -64,22 +64,35 @@ export function NavBar() {
                             </Link>
                             <ul className="dropdown-menu">
                                 <li>
-                                    <Link className="dropdown-item" to="/Recipes">
+                                    <Link className="dropdown-item" to="/Breakfast">
+
                                         Breakfast
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="dropdown-item" to="/Recipes">
+
+                                    <Link className="dropdown-item" to="/Lunch">
+
+                                  
+
                                         Lunch
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="dropdown-item" to="/Recipes">
+
+                                    <Link className="dropdown-item" to="/Dinner">
+
+                                    
+
                                         Dinner
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="dropdown-item" to="/Recipes">
+
+                                    <Link className="dropdown-item" to="/Snack">
+
+                                   
+
                                         Snacks and Desserts
                                     </Link>
                                 </li>
