@@ -5,6 +5,11 @@ import Store from './Pages/Store/Store';
 import Progress from './Pages/Progress/Progress';
 import Settings from './Pages/Settings/Settings';
 import Register from './Pages/Register/Register';
+import Mainpage from './Pages/Mainpage/Mainpage';
+import Products from './Pages/Products/Products';
+import Period from './Pages/Period-section/Period';
+import HomePage from './Pages/HomePage/homepage';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -31,7 +36,13 @@ function App() {
           <Route path='/Lunch' element={<Lunch />} />
           <Route path='/Dinner' element={<Dinner />} />
           <Route path='/Snack' element={<Snack />} />
-          <Route path='/Register' element = {<Register/>} />
+          <Route path='/Register' element={<Register/>} />
+          <Route path='/Mainpage' element={<Mainpage/>} />
+          <Route path='/Products' element={<Products/>} />
+          <Route path ='/Period' element={<Period/>} />
+          <Route path='/HomePage' element={<HomePage/>} />
+         
+
 
         </Routes>
 
