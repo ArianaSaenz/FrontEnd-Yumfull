@@ -7,7 +7,10 @@ import Settings from './Pages/Settings/Settings';
 import Recipes from './Pages/Recipes/Recipes';
 import Register from './Pages/Register/Register';
 import Mainpage from './Pages/Mainpage/Mainpage';
+import Products from './Pages/Products/Products';
+import Period from './Pages/Period-section/Period';
 import HomePage from './Pages/HomePage/homepage';
+
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -30,7 +33,11 @@ function App() {
           <Route path='/Recipes' element={<Recipes />} />
           <Route path='/Register' element = {<Register/>} />
           <Route path='/Mainpage' element = {<Mainpage/>} />
+          <Route path='/Products' element = {<Products/>} />
+          <Route path ='/Period' element = {<Period/>} />
           <Route path='/HomePage' element = {<HomePage/>} />
+         
+
         </Routes>
 
       </BrowserRouter>
