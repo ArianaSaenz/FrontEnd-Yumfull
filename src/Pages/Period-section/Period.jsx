@@ -1,11 +1,14 @@
 import './styles.css';
+import { Helmet } from 'react-helmet';
 
-export function Period() {
+export default function Period() {
   return (
     <>
-      <meta charSet="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Period Food Guide</title>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Period Food Guide</title>
+      </Helmet>
 
       <div className="container">
         <header className="header">
@@ -147,4 +150,5 @@ export function Period() {
     </>
   );
 }
+
 
