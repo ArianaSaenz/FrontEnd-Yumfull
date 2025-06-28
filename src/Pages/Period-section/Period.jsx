@@ -12,17 +12,6 @@ export function Period() {
 
       <div className="container">
         <header className="header">
-          <nav className="navbar">
-            <h1>YumFull</h1>
-            <ul>
-              <ul>Home</ul>
-              <ul>Recipes</ul>
-              <ul>Store</ul>
-              <ul>Girl's Spot</ul>
-              <ul>Pregnancy</ul>
-              <ul>Progress</ul>
-            </ul>
-          </nav>
           <div className="hero">
             <h2>What to eat and not to eat during your period?</h2>
             <p>
@@ -161,3 +150,4 @@ export function Period() {
     </>
   );
 }
+

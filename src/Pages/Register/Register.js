@@ -7,24 +7,24 @@ import './Register.css';
 
 function Register() {
   return (
-    <div className="container">
+    <div className="containerR">
       <div className="left-section">
         <div className="center-line">
           <div className="food-images">
             <img
               src={fruittoast}
               alt="Fruit Toast"
-              className="food-image top-left"
+              className="food-image top-leftR"
             />
             <img
               src={eggberries}
               alt="Eggs with Berries"
-              className="food-image top-right"
+              className="food-image top-rightR"
             />
             <img
               src={pupusas}
               alt="Pupusas"
-              className="food-image bottom-center"
+              className="food-image bottom-centerR"
             />
           </div>
         </div>
