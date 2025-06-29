@@ -35,9 +35,9 @@ export default function Period() {
             <div className="sidebar-card right-side highlighted-card">
               <h4>On this section:</h4>
               <ul>
-                <ul>Food to eat throughout menstruation days</ul>
-                <ul>What cannot I consume?</ul>
-                <ul>Frequently asked</ul>
+                <li>Food to eat throughout menstruation days</li>
+                <li>What cannot I consume?</li>
+                <li>Frequently asked</li>
               </ul>
             </div>
           </div>
@@ -150,5 +150,3 @@ export default function Period() {
     </>
   );
 }
-
-
