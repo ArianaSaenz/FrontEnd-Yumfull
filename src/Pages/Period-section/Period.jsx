@@ -1,25 +1,17 @@
 import './styles.css';
+import { Helmet } from 'react-helmet';
 
-export function Period() {
+export default function Period() {
   return (
     <>
-      <meta charSet="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Period Food Guide</title>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Period Food Guide</title>
+      </Helmet>
 
       <div className="container">
         <header className="header">
-          <nav className="navbar">
-            <h1>YumFull</h1>
-            <ul>
-              <ul>Home</ul>
-              <ul>Recipes</ul>
-              <ul>Store</ul>
-              <ul>Girl's Spot</ul>
-              <ul>Pregnancy</ul>
-              <ul>Progress</ul>
-            </ul>
-          </nav>
           <div className="hero">
             <h2>What to eat and not to eat during your period?</h2>
             <p>
@@ -43,9 +35,9 @@ export function Period() {
             <div className="sidebar-card right-side highlighted-card">
               <h4>On this section:</h4>
               <ul>
-                <ul>Food to eat throughout menstruation days</ul>
-                <ul>What cannot I consume?</ul>
-                <ul>Frequently asked</ul>
+                <li>Food to eat throughout menstruation days</li>
+                <li>What cannot I consume?</li>
+                <li>Frequently asked</li>
               </ul>
             </div>
           </div>
@@ -158,3 +150,4 @@ export function Period() {
     </>
   );
 }
+
