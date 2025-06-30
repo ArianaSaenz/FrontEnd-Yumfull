@@ -19,13 +19,6 @@ function Store() {
             <img className="floating-basket" src={basketImage} alt="Basket" />
 
             <header className="header">
-                <nav className="navbar">
-                    <div className="menu-icon">☰</div>
-                    <div className="search-bar">
-                        <input type="text" placeholder="Search..." />
-                        <button>🔍</button>
-                    </div>
-                </nav>
 
                 <section className="hero">
                     <div className="hero-text">
