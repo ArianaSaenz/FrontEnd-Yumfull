@@ -1,6 +1,6 @@
 import './styles.css';
 
-export function Period() {
+function Period() {
   return (
     <>
       <meta charSet="UTF-8" />
@@ -158,3 +158,5 @@ export function Period() {
     </>
   );
 }
+
+export default Period
