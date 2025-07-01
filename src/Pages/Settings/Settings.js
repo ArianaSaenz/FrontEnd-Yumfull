@@ -14,8 +14,7 @@ function Settings() {
             <aside className="sidebar">
                 <nav className="nav-menu">
                     <ul>
-                        {/* 3. Modifica cada <li> para usar el estado y la función handleClick */}
-                        {/* La clase 'active' se aplica condicionalmente */}
+
                         <li
                             data-target="profile-page"
                             className={activePage === 'profile-page' ? 'active' : ''}
