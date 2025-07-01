@@ -7,7 +7,7 @@ import './Login.css';
 function Login() {
   return (
     <div className="containerL">
-      <div className="left-section">
+      <div className="left-sectionLogin">
         <div className="center-line">
           <div className="food-images">
             <img
