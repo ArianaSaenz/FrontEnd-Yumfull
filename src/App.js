@@ -9,6 +9,7 @@ import Mainpage from './Pages/Mainpage/Mainpage';
 import Products from './Pages/Products/Products';
 import Period from './Pages/Period-section/Period';
 import HomePage from './Pages/HomePage/homepage';
+import Pregnancy from './Pages/Pregnancy/Pregnancy';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -41,7 +42,7 @@ function App() {
           <Route path='/Products' element={<Products/>} />
           <Route path ='/Period' element={<Period/>} />
           <Route path='/HomePage' element={<HomePage/>} />
-         
+          <Route path='/Pregnancy' element={<Pregnancy/>} />
 
 
         </Routes>
