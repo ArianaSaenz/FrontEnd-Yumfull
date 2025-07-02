@@ -14,9 +14,8 @@ body.Login {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    padding: 40px;
+    width: 95%;
+    padding: -20px;
     box-sizing: border-box;
 }
 
@@ -62,7 +61,7 @@ body.Login {
 .green-background {
     position: absolute;
     width: 130%;
-    height: 120%;
+    height: 100%;
     top: -30px;
     right: -21%;
     background-color: #a6e84a;
@@ -73,7 +72,7 @@ body.Login {
 .plate-image {
     position: relative;
     max-width: 90%;
-    width: 130%;
+    width: 100%;
     height: auto;
     top: 40px;
     right: -26%;
