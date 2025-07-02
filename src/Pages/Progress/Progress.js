@@ -1,4 +1,7 @@
 import './progress.css';
+import heart from './Images/heart.png';
+import medal from './Images/medal.png';
+import salad from './Images/salad.png';
 
 function Progress() {
     return (
@@ -9,9 +12,9 @@ function Progress() {
                     <section className="mb-4">
                         <div className="ad">Your goals</div>
                         <div className="d-flex gap-3">
-                            <div className="goal-box"></div>
-                            <div className="goal-box"></div>
-                            <div className="goal-box"></div>
+                            <div className="goal-box"><img className="goals" src={heart} alt='heart'/></div>
+                            <div className="goal-box"><img className="goals" src={medal} alt='medal'/></div>
+                            <div className="goal-box"><img className="goals" src={salad} alt='goals'/></div>
                         </div>
                     </section>
 
