@@ -11,19 +11,19 @@ body {
 }
 
 .header {
-    background: linear-gradient(to bottom, #43a047, hsl(123, 53%, 23%));
+    background: linear-gradient(to bottom, #43a047, hsl(123, 55%, 21%));
     color: white;
     width: 1188px;
     max-width: 100%;
-    padding-bottom: 1rem;
-    position: relative; /* o absolute */
+    position: relative; 
     top: 10px;
+    botton: 9px;
     left: 20px;
 }
 
 .floating-basket {
     position: absolute;
-    top: -5px;
+    top: 20px;
     right: -250px;
     width: 500px;
     z-index: 10;
@@ -62,7 +62,8 @@ body {
     line-height: 2rem;
     margin-bottom: 4rem;
     margin-right: -8rem;
-    transform: translateX(500px)
+    transform: translateX(500px);
+    color: white;
 }
 
 .hero-text p{
