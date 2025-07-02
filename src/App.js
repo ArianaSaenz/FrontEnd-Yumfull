@@ -29,6 +29,7 @@ function App() {
         <NavBar />
 
         <Routes>
+          <Route path='/' element={<Mainpage />} />
           <Route path='/Store' element={<Store />} />
           <Route path='/Progress' element={<Progress />} />
           <Route path='/Settings' element={<Settings />} />
@@ -38,7 +39,6 @@ function App() {
           <Route path='/Dinner' element={<Dinner />} />
           <Route path='/Snack' element={<Snack />} />
           <Route path='/Register' element={<Register/>} />
-          <Route path='/Mainpage' element={<Mainpage/>} />
           <Route path='/Products' element={<Products/>} />
           <Route path ='/Period' element={<Period/>} />
           <Route path='/HomePage' element={<HomePage/>} />
