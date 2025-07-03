@@ -12,12 +12,11 @@ function Pregnancy() {
           <p className="nutrition-text">
             During pregnancy, a balanced diet helps manage physical and emotional changes.
             It can ease symptoms like bloating and mood swings, while supporting the baby's
-            development and helping the mother feel better overall. Eating nutritious foods
-            provides essential vitamins and minerals that are crucial for your baby's growth.
+            development and helping the mother feel better overall.
           </p>
           <p className="nutrition-text">
             A healthy pregnancy diet should include: plenty of fruits and vegetables,
-            whole grains, lean proteins, and dairy products. Stay hydrated by drinking
+            whole grains, and dairy products. Stay hydrated by drinking
             plenty of water throughout the day.
           </p>
        </div>
