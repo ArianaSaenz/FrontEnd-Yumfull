@@ -1,4 +1,5 @@
 import { NavBar } from './NavBar/NavBar';
+import { useLocation } from 'react-router-dom';
 import './App.css';
 import Login from './Pages/Login/Login';
 import Store from './Pages/Store/Store';
@@ -20,37 +21,42 @@ import Dinner from './Pages/Recipes/Dinner';
 import Snack from './Pages/Recipes/Snack';
 
 function App() {
+  const location = useLocation();
+  const hiddenNavbarRoutes = ['/', '/Login', '/Register'];
+
+  const showNavbar = !hiddenNavbarRoutes.includes(location.pathname);
+
   return (
     <div>
-      <BrowserRouter>
+      {showNavbar && <NavBar />}
 
 
-
-        <NavBar />
-
-        <Routes>
-          <Route path='/' element={<Mainpage />} />
-          <Route path='/Store' element={<Store />} />
-          <Route path='/Progress' element={<Progress />} />
-          <Route path='/Settings' element={<Settings />} />
-          <Route path='/Login' element={<Login />} />
-          <Route path='/Breakfast' element={<Breakfast />} />
-          <Route path='/Lunch' element={<Lunch />} />
-          <Route path='/Dinner' element={<Dinner />} />
-          <Route path='/Snack' element={<Snack />} />
-          <Route path='/Register' element={<Register/>} />
-          <Route path='/Products' element={<Products/>} />
-          <Route path ='/Period' element={<Period/>} />
-          <Route path='/HomePage' element={<HomePage/>} />
-          <Route path='/Pregnancy' element={<Pregnancy/>} />
+      <Routes>
+        <Route path='/' element={<Mainpage />} />
+        <Route path='/Store' element={<Store />} />
+        <Route path='/Progress' element={<Progress />} />
+        <Route path='/Settings' element={<Settings />} />
+        <Route path='/Login' element={<Login />} />
+        <Route path='/Breakfast' element={<Breakfast />} />
+        <Route path='/Lunch' element={<Lunch />} />
+        <Route path='/Dinner' element={<Dinner />} />
+        <Route path='/Snack' element={<Snack />} />
+        <Route path='/Register' element={<Register />} />
+        <Route path='/Products' element={<Products />} />
+        <Route path='/Period' element={<Period />} />
+        <Route path='/HomePage' element={<HomePage />} />
+        <Route path='/Pregnancy' element={<Pregnancy />} />
 
 
-        </Routes>
-
-      </BrowserRouter>
-
+      </Routes>
     </div>
   );
 }
 
-export default App;
+export default function AppWrapper() {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+}
