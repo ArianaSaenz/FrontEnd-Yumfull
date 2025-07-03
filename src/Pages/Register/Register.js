@@ -8,7 +8,7 @@ import './Register.css';
 function Register() {
   return (
     <div className="containerR">
-      <div className="left-section">
+      <div className="left-sectionRegister">
         <div className="center-line">
           <div className="food-images">
             <img

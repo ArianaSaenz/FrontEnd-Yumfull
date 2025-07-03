@@ -23,7 +23,7 @@ body.Register {
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
  
-.left-section {
+.left-sectionRegister {
   flex: 1;
   background-color: #FFFFFF;
   position: relative;
@@ -32,27 +32,27 @@ body.Register {
   align-items: center;
   overflow: hidden;
 }
- 
-.left-section::before,
-.left-section::after {
-  content: '';
+
+.left-sectionRegister::before{
+  left: -40px;
+  top:-60px ;
+  height: 150px;
+  width: 200px;
+  content: ''; 
   position: absolute;
   border: 2px solid rgba(0, 0, 0, 0.1);
   transform: rotate(45deg);
 }
- 
-.left-section::before {
-  top: -50px;
-  left: -50px;
-  width: 150px;
+.left-sectionRegister::after{
+  right: -80px;
+  bottom: -60px;
   height: 150px;
-}
- 
-.left-section::after {
-  bottom: -50px;
-  right: -50px;
   width: 200px;
-  height: 400px;
+  content: ''; 
+  position: absolute;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transform: rotate(45deg);
+ 
 }
  
 .center-line {
