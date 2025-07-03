@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 
 export function NavBar() {
     return (
+        
         <nav className="navbar navbar-expand-lg bg-transparent fs-5">
             <div className="container-fluid d-flex justify-content-between align-items-center">
                 <Link className="navbar-brand" to="/Login">
@@ -36,20 +37,38 @@ export function NavBar() {
                         </li>
 
                         <li className="nav-item">
-
-                            <Link className="nav-link" to="/">
-                                Girl's Spot
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/Pregnancy">
-                                Pregnancy
-                            </Link>
-                        </li>
-                        <li className="nav-item">
                             <Link className="nav-link" to="/Progress">
                                 Progress
-               </Link>
+                            </Link>
+                        </li>
+
+                        <li className="nav-item dropdown">
+                            <Link
+                                className="nav-link dropdown-toggle"
+                                to="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Girl's Spot
+                            </Link>
+                            <ul className="dropdown-menu">
+                                <li>
+                                    <Link className="dropdown-item" to="/Period">
+
+                                        Period
+                                    </Link>
+                                </li>
+                                <li>
+
+                                    <Link className="dropdown-item" to="/Pregnancy">
+
+
+
+                                        Pregnancy
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
 
                         <li className="nav-item dropdown">
@@ -73,7 +92,7 @@ export function NavBar() {
 
                                     <Link className="dropdown-item" to="/Lunch">
 
-                                  
+
 
                                         Lunch
                                     </Link>
@@ -82,7 +101,7 @@ export function NavBar() {
 
                                     <Link className="dropdown-item" to="/Dinner">
 
-                                    
+
 
                                         Dinner
                                     </Link>
@@ -91,7 +110,7 @@ export function NavBar() {
 
                                     <Link className="dropdown-item" to="/Snack">
 
-                                   
+
 
                                         Snacks and Desserts
                                     </Link>
