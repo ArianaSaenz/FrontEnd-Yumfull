@@ -14,7 +14,8 @@ const HomePage = () => {
       <header className="hero-section">
         <div className="hero-content">
           <h1>
-            Eat Well, Live Well
+            Full of yum<br />
+            Full of life
           </h1>
           <p className="hero-subtitle">
             Discover healthy, delicious recipes tailored to your diet or health needs. 

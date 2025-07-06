@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, #a8e063 0%, #f8ffae 100%);
+  background: linear-gradient(90deg, #D1c884 0%, #9FD836 100%);
   padding: 60px 15vw 40px 0;
   border-radius: 0 0 40px 40px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.07);
@@ -23,15 +23,6 @@
   max-height: none;
 }
 
-.hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(90deg, #a8e063 0%, #f8ffae 100%);
-  padding: 60px 15vw 40px 5vw;
-  border-radius: 0 0 40px 40px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-}
 
 .hero-content {
   max-width: 500px;
