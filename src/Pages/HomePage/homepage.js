@@ -55,8 +55,20 @@ const HomePage = () => {
           </div>
           <div className="recipe-card">
             <img src={broccolichicken} alt="Broccoli Chicken" />
-            <h3>Broccoli&Chicken</h3>
+            <h3>Broccoli & Chicken</h3>
             <p>High-protein, low-carb, and packed with nutrients.</p>
+            <a href="/recipes" className="cta-button">View Recipe</a>
+          </div>
+          <div className="recipe-card">
+            <img src={omelette} alt="Omelette" />
+            <h3>Omelette</h3>
+            <p>Fluffy eggs with your favorite veggies. A protein-packed breakfast!</p>
+            <a href="/recipes" className="cta-button">View Recipe</a>
+          </div>
+          <div className="recipe-card">
+            <img src={yogurtapple} alt="Yogurt Apple" />
+            <h3>Yogurt Apple</h3>
+            <p>Creamy yogurt with crisp apples and a touch of honey. Refreshing and healthy!</p>
             <a href="/recipes" className="cta-button">View Recipe</a>
           </div>
         </div>

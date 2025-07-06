@@ -18,6 +18,9 @@
   box-shadow: 0 4px 24px rgba(0,0,0,0.07);
   box-sizing: border-box;
   gap: 8px;
+  height: auto;
+  min-height: 0;
+  max-height: none;
 }
 
 .hero-section {
