@@ -36,14 +36,14 @@ function Mainpage() {
                 <div className="cards-container">
                     <div className="card">
                         <img src={Bowl} alt="Platillo Color Power" />
-                        <p>Granola y frutas</p>
+                        <p>granola and fruits</p>
                         <div className="stars">
                             <span>★★★★★</span>
                         </div>
                     </div>
                     <div className="card">
                         <img src={carne} alt="Platillo Share of Energy" />
-                        <p>Carne</p>
+                        <p>Meat</p>
                         <div className="stars">
                             <span>★★★★★</span>
                         </div>
@@ -57,7 +57,7 @@ function Mainpage() {
                     </div>
                     <div className="card">
                         <img src={pasta} alt="Platillo Organ Mix" />
-                        <p>Pasta</p>
+                        <p>Paste</p>
                         <div className="stars">
                             <span>★★★★★</span>
                         </div>
