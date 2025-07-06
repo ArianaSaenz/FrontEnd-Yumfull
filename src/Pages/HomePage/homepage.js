@@ -1,6 +1,12 @@
 import React from 'react';
 import './homepage.css';
 import plateImage from './imagenes1/plateImage.png';
+import avocadotacos from './imagenes1/avocadotacos.png';
+import broccolichicken from './imagenes1/broccolichicken.png';
+import omelette from './imagenes1/omelette.png';
+import yogurtapple from './imagenes1/yogurtapple.png';
+
+
 
 const HomePage = () => {
   return (
@@ -16,7 +22,6 @@ const HomePage = () => {
           </p>
           <div className="hero-buttons">
             <a href="/recipes" className="cta-button">Find Recipes</a>
-            <a href="/Login" className="cta-button secondary">Login</a>
           </div>
         </div>
         <div className="hero-image">
@@ -43,16 +48,16 @@ const HomePage = () => {
         <h2>Featured Recipes</h2>
         <div className="featured-recipes">
           <div className="recipe-card">
-            <img src={plateImage} alt="Avocado Tacos" />
+            <img src={avocadotacos} alt="Avocado Tacos" />
             <h3>Avocado Tacos</h3>
             <p>Fresh, creamy, and full of flavor. Perfect for a light lunch!</p>
-            <a href="/recipes" className="view-recipe-link">View Recipe</a>
+            <a href="/recipes" className="cta-button">View Recipe</a>
           </div>
           <div className="recipe-card">
-            <img src={plateImage} alt="Broccoli Chicken" />
-            <h3>Broccoli Chicken</h3>
+            <img src={broccolichicken} alt="Broccoli Chicken" />
+            <h3>Broccoli&Chicken</h3>
             <p>High-protein, low-carb, and packed with nutrients.</p>
-            <a href="/recipes" className="view-recipe-link">View Recipe</a>
+            <a href="/recipes" className="cta-button">View Recipe</a>
           </div>
         </div>
       </section>
