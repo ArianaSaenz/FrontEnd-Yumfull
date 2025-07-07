@@ -100,7 +100,7 @@ body.Login {
   width: 200px;
 }
 
-.right-section {
+.right-sectionL {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -109,26 +109,26 @@ body.Login {
   padding: 80px 20px;
 }
 
-.right-section h1 {
+.right-sectionL h1 {
   color: #4CAF50;
   margin-bottom: 40px;
   font-size: 2.5em;
   text-align: center;
 }
 
-.form-group {
+.form-groupL {
   margin-bottom: 20px;
   width: 70%;
 }
 
-.form-group label {
+.form-groupL label {
   display: block;
   margin-bottom: 5px;
   color: #555;
   font-weight: bold;
 }
 
-.form-group input {
+.form-groupL input {
   width: 100%;
   padding: 12px;
   border: 1px solid #ddd;
@@ -143,7 +143,7 @@ body.Login {
   color: #888;
 }
 
-.submit-button {
+.submit-buttonL {
   width: 70%;
   padding: 12px;
   background-color: #479C2D;
@@ -157,7 +157,7 @@ body.Login {
   transition: background-color 0.3s ease;
 }
 
-.submit-button:hover {
+.submit-buttonL:hover {
   background-color: #45a049;
 }
 

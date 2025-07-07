@@ -29,9 +29,9 @@ function Login() {
         </div>
       </div>
 
-      <div className="right-section">
+      <div className="right-sectionL">
         <h1>Start the journey</h1>
-        <div className="form-group">
+        <div className="form-groupL">
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -40,7 +40,7 @@ function Login() {
             placeholder="Enter your email address"
           />
         </div>
-        <div className="form-group">
+        <div className="form-groupL">
           <label htmlFor="password">Password</label>
           <input
             type="password"
@@ -49,7 +49,7 @@ function Login() {
             placeholder="Enter your password"
           />
         </div>
-        <button type="submit" className="submit-button">
+        <button type="submit" className="submit-buttonL">
           Log In
         </button>
       </div>

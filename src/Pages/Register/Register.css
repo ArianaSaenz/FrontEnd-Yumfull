@@ -100,7 +100,7 @@ body.Register {
   width: 190px;
 }
  
-.right-section {
+.right-sectionR {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -109,27 +109,43 @@ body.Register {
   padding: 80px 20px;
 }
  
-.right-section h1 {
+.right-sectionR h1 {
+  right: 20px;
+  position: relative;
+  bottom: -4%;
   color: #4CAF50;
   margin-bottom: 40px;
   font-size: 2.5em;
   text-align: center;
 }
- 
-.form-group {
-  margin-bottom: 20px;
-  width: 70%;
+.form-groupR label{
+  display: block;
+  position: relative;
+  left: -70px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  color: #555;
+  font-weight: bold;
 }
  
-.form-group label {
+.form-groupR {
+  margin-bottom: 20px;
+  width: 100%;
+}
+ 
+.form-groupR label {
   display: block;
+  position: relative;
+  left: -70px;
   margin-bottom: 5px;
   color: #555;
   font-weight: bold;
 }
  
-.form-group input {
-  width: 100%;
+.form-groupR input {
+  position: relative;
+  left: -70px;
+  width: 150%;
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -139,12 +155,14 @@ body.Register {
   color: #333;
 }
  
-.form-group input::placeholder {
+.form-groupR input::placeholder {
   color: #888;
 }
  
-.submit-button {
-  width: 70%;
+.submit-buttonR {
+  position: relative;  /* Asegura que 'left' tenga efecto */
+  right: 70px;           /* Lo mueves 10% más a la izquierda */
+  width: 150%;
   padding: 12px;
   background-color: #479C2D;
   color: white;
@@ -156,8 +174,8 @@ body.Register {
   margin-top: 20px;
   transition: background-color 0.3s ease;
 }
- 
-.submit-button:hover {
+
+.submit-buttonR:hover {
   background-color: #45a049;
 }
  

@@ -12,6 +12,7 @@ import { CgArrowUpO } from "react-icons/cg";
 import { IoArrowUndoCircle } from "react-icons/io5";
 import { CgShoppingCart } from "react-icons/cg";
 
+
 function Products() {
     const navigate = useNavigate();
     return (
