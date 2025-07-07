@@ -53,6 +53,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    border-radius: 35px;
 }
 
 .nav-menu ul {
@@ -61,7 +62,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 70px;
     width: 100%;
 }
 
@@ -145,7 +146,8 @@ body {
 }
 
 #profile-page .profile-form .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    max-width: 200px;
 }
 
 #profile-page .profile-form label {
@@ -159,11 +161,12 @@ body {
 #profile-page .profile-form input[type="text"],
 #profile-page .profile-form input[type="email"],
 #profile-page .profile-form select {
-    width: 100%;
-    padding: 10px 12px;
+    width: 100000000%;
+    max-width: 55500%;
+    padding: 20px 15px;
     border: 1px solid var(--border-color);
-    border-radius: 5px;
-    font-size: 0.9em;
+    border-radius: 15px;
+    font-size: 1.1em;
     color: var(--text-color-dark);
     outline: none;
     transition: border-color 0.3s ease;
@@ -192,7 +195,7 @@ body {
     padding: 12px 0;
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 10px;
-    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .notification-setting:last-of-type {
@@ -261,6 +264,7 @@ input:checked+.slider:before {
 
 .slider.round {
     border-radius: 26px;
+    max-width: 50px;
 }
 
 .slider.round:before {
@@ -636,229 +640,3 @@ img {
         'opsz' 24
 }
 
-@media (min-width: 768px) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container {
-        flex-direction: row;
-        width: 90%;
-        max-width: 1200px;
-        min-height: 80vh;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        margin: 20px auto;
-    }
-
-    .sidebar {
-        width: 220px;
-        min-height: 100%;
-        flex-direction: column;
-        justify-content: space-between;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        padding: 30px 0;
-        position: static;
-    }
-
-    .nav-menu ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding: 0 20px;
-        width: auto;
-    }
-
-    .nav-menu li {
-        flex-direction: row;
-        gap: 10px;
-        padding: 10px 20px;
-        text-align: left;
-        width: 100%;
-    }
-
-    .nav-menu li .material-symbols-outlined {
-        margin-right: 15px;
-        font-size: 24px;
-    }
-
-    .nav-menu li span {
-        font-size: 1.1em;
-    }
-
-    .logout {
-        display: flex;
-        padding: 15px 30px;
-        margin-top: auto;
-    }
-
-    .page-content {
-        padding: 30px 40px;
-    }
-
-    .page-content h1 {
-        font-size: 2em;
-        margin-bottom: 30px;
-    }
-
-    #profile-page .profile-header {
-        flex-direction: row;
-        text-align: left;
-        margin-bottom: 30px;
-    }
-
-    #profile-page .profile-avatar {
-        margin-bottom: 0;
-        margin-right: 20px;
-    }
-
-    #profile-page .profile-avatar .material-symbols-outlined {
-        font-size: 80px;
-    }
-
-    #profile-page .profile-info h2 {
-        font-size: 1.8em;
-    }
-
-    #profile-page .profile-info p {
-        font-size: 1em;
-    }
-
-    #profile-page .profile-form .form-group {
-        margin-bottom: 25px;
-    }
-
-    #profile-page .profile-form label {
-        font-size: 0.9em;
-    }
-
-    #profile-page .profile-form input,
-    #profile-page .profile-form select {
-        padding: 12px 15px;
-        font-size: 1em;
-    }
-
-    #profile-page .profile-form .form-row {
-        flex-direction: row;
-        gap: 30px;
-    }
-
-    .notification-setting {
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
-        padding: 15px 0;
-    }
-
-    .notification-setting label {
-        width: auto;
-    }
-
-    .notification-setting input[type="time"] {
-        width: 120px;
-        max-width: unset;
-    }
-
-    .general-setting {
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
-        padding: 15px 0;
-    }
-
-    .general-setting label {
-        width: auto;
-    }
-
-    .general-setting select {
-        width: auto;
-        max-width: 150px;
-    }
-
-    .general-setting.row-setting {
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 30px;
-    }
-
-    .general-setting.row-setting .setting-group {
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
-        width: auto;
-    }
-
-    #food-preferences-page .section-description {
-        font-size: 1em;
-        margin-bottom: 30px;
-    }
-
-    .preference-group {
-        margin-bottom: 30px;
-    }
-
-    .checkbox-container {
-        font-size: 1.1em;
-        margin-bottom: 15px;
-    }
-
-    .other-restrictions {
-        margin-bottom: 30px;
-    }
-
-    .tags-section {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-    }
-
-    .tag-list-group {
-        min-width: 250px;
-        width: auto;
-    }
-
-    .tag-list-group label {
-        font-size: 1.1em;
-        margin-bottom: 15px;
-    }
-
-    .tags-container {
-        gap: 10px;
-    }
-
-    .tag {
-        padding: 8px 12px;
-        font-size: 0.9em;
-    }
-
-    .tag .close-tag {
-        margin-left: 8px;
-    }
-
-    .add-tag-btn {
-        padding: 8px 12px;
-        font-size: 0.9em;
-    }
-
-    .background-shapes {
-        display: block;
-    }
-}
-
-@media (min-width: 1024px) {
-    .sidebar {
-        width: 250px;
-        padding: 30px 0;
-    }
-
-    .page-content {
-        padding: 40px 60px;
-    }
-
-    .page-content h1 {
-        font-size: 2.2em;
-        margin-bottom: 40px;
-    }
-}
