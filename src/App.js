@@ -1,24 +1,39 @@
+import React from 'react';
 import { NavBar } from './NavBar/NavBar';
 import { useLocation } from 'react-router-dom';
 import './App.css';
+
+// Páginas
 import Login from './Pages/Login/Login';
+import Register from './Pages/Register/Register';
+import Mainpage from './Pages/Mainpage/Mainpage';
 import Store from './Pages/Store/Store';
 import Progress from './Pages/Progress/Progress';
 import Settings from './Pages/Settings/Settings';
-import Register from './Pages/Register/Register';
-import Mainpage from './Pages/Mainpage/Mainpage';
 import Products from './Pages/Products/Products';
 import Period from './Pages/Period-section/Period';
 import HomePage from './Pages/HomePage/homepage';
 import Pregnancy from './Pages/Pregnancy/Pregnancy';
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
 import Breakfast from './Pages/Recipes/Breakfast';
 import Lunch from './Pages/Recipes/Lunch';
 import Dinner from './Pages/Recipes/Dinner';
 import Snack from './Pages/Recipes/Snack';
+
+import { Routes, Route } from 'react-router-dom';
+
+// Clerk
+import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
+
+function ProtectedRoute({ children }) {
+  return (
+    <>
+      <SignedIn>{children}</SignedIn>
+      <SignedOut>
+        <RedirectToSignIn redirectUrl="/Login" />
+      </SignedOut>
+    </>
+  );
+}
 
 function App() {
   const location = useLocation();
@@ -30,33 +45,81 @@ function App() {
     <div>
       {showNavbar && <NavBar />}
 
-
       <Routes>
-        <Route path='/' element={<Mainpage />} />
-        <Route path='/Store' element={<Store />} />
-        <Route path='/Progress' element={<Progress />} />
-        <Route path='/Settings' element={<Settings />} />
-        <Route path='/Login' element={<Login />} />
-        <Route path='/Breakfast' element={<Breakfast />} />
-        <Route path='/Lunch' element={<Lunch />} />
-        <Route path='/Dinner' element={<Dinner />} />
-        <Route path='/Snack' element={<Snack />} />
-        <Route path='/Register' element={<Register />} />
-        <Route path='/Products' element={<Products />} />
-        <Route path='/Period' element={<Period />} />
-        <Route path='/HomePage' element={<HomePage />} />
-        <Route path='/Pregnancy' element={<Pregnancy />} />
+        {/* Públicas */}
+        <Route path="/" element={<Mainpage />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Register" element={<Register />} />
 
+        {/* Protegidas */}
+        <Route path="/Store" element={
+          <ProtectedRoute>
+            <Store />
+          </ProtectedRoute>
+        } />
 
+        <Route path="/Progress" element={
+          <ProtectedRoute>
+            <Progress />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/Settings" element={
+          <ProtectedRoute>
+            <Settings />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/Products" element={
+          <ProtectedRoute>
+            <Products />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/Period" element={
+          <ProtectedRoute>
+            <Period />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/HomePage" element={
+          <ProtectedRoute>
+            <HomePage />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/Pregnancy" element={
+          <ProtectedRoute>
+            <Pregnancy />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/Breakfast" element={
+          <ProtectedRoute>
+            <Breakfast />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/Lunch" element={
+          <ProtectedRoute>
+            <Lunch />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/Dinner" element={
+          <ProtectedRoute>
+            <Dinner />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/Snack" element={
+          <ProtectedRoute>
+            <Snack />
+          </ProtectedRoute>
+        } />
       </Routes>
     </div>
   );
 }
 
-export default function AppWrapper() {
-  return (
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  );
-}
+export default App;
