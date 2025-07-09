@@ -139,13 +139,14 @@ body {
 }
 
 .card img {
-    max-width: 210%;
-    height: 250px;
+    max-width: 100px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 18px;
     filter: brightness(0.95);
 }
+ 
 
 .card p {
     font-weight: 600;
@@ -201,32 +202,6 @@ body {
     line-height: 1.1;
 }
 
-.button-group .btn-row {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-}
-
-.btn-yellow {
-    background-color: #FFEB3B;
-    color: #333;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 1.1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    white-space: nowrap;
-}
-
-.btn-yellow:hover {
-    background-color: #fdd835;
-    transform: translateY(-2px);
-}
 
 .btn-row p {
     font-size: 1em;
