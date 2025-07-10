@@ -71,7 +71,7 @@ const HomePage = () => {
                 <div className="progreso-container menstrual">
                     <div className="titulo">Your menstrual summary</div>
                     <div className="mensaje">
-                        You've been eating according to your body state for 4 days. That’s helping to regulate your energy and focus!
+                        Hormone changes in the Luteal phase may affect mood and energy, so eating well and resting helps you feel betteR.
                     </div>
                     <div className="mensaje">Current Phase: Luteal</div>
                     <div className="mensaje">Days until next period: 5</div>
