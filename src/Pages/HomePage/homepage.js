@@ -4,6 +4,10 @@ import plateImage from './imagenes1/plateImage.png';
 import avocadotacos from './imagenes1/avocadotacos.png';
 import broccolichicken from './imagenes1/broccolichicken.png';
 import yogurtapple from './imagenes1/yogurtapple.png';
+import brain from './imagenes1/brain.png';
+import salad from './imagenes1/salad.png';
+import chart from './imagenes1/combo-chart.png';
+
 
 const HomePage = () => {
     return (
@@ -57,25 +61,27 @@ const HomePage = () => {
                     <div className="mensaje">
                         You've been eating according to your body state for 4 days. That’s helping to regulate your energy and focus!
                     </div>
-                    <div className="item">✅ 3 out of 5 balanced meals per day</div>
-                    <div className="item">✅ 2 anti-stress snacks added</div>
-                    <div className="item">✅ 1 day with optimal hydration</div>
+                    <div className="mensaje">✅ 3 out of 5 balanced meals per day</div>
+                    <div className="mensaje">✅ 2 anti-stress snacks added</div>
+                    <div className="mensaje">✅ 1 day with optimal hydration</div>
                     <div className="sugerencia">💡 We suggest sleeping 1 hour more tonight</div>
                     <button className="boton">View full progress</button>
                 </div>
 
-                <div className="progreso-container">
-                    <div className="titulo">Smart Body Modes</div>
-                    <div className="mensaje">Slept 5h 32min → Low energy levels</div>
-                    <div className="mensaje">Heart rate: slightly elevated</div>
-                    <div className="mensaje">Stress: moderate due to recent activity</div>
-                    <div className="mensaje">We suggest a tryptophan-rich meal</div>
-                    <div className="sugerencia">🧠 We suggest a tryptophan-rich meal</div>
-                    <button className="boton">View recommendations</button>
+                <div className="progreso-container menstrual">
+                    <div className="titulo">Your menstrual summary</div>
+                    <div className="mensaje">
+                        You've been eating according to your body state for 4 days. That’s helping to regulate your energy and focus!
+                    </div>
+                    <div className="mensaje">Current Phase: Luteal</div>
+                    <div className="mensaje">Days until next period: 5</div>
+                    <div className="mensaje">Symptoms: Mild cramps, mood swings</div>
+                    <div className="sugerencia">🌿 Eat magnesium-rich foods like spinach & seeds</div>
+                    <button className="boton">View full recommendations</button>
                 </div>
             </section>
 
-            
+
             <section className="how-it-works-section">
                 <h2>How YumFull Helps You</h2>
                 <p className="how-it-works-subtitle">
@@ -83,21 +89,22 @@ const HomePage = () => {
                 </p>
                 <div className="how-it-works-steps">
                     <div className="step-card">
-                        <img src="https://img.icons8.com/ios-filled/100/388e3c/brain.png" alt="Brain" />
+                        <img src={brain} alt="Brain" />
                         <h3>Understand Your Needs</h3>
                         <p>We analyze your stress, sleep, energy and cravings.</p>
                     </div>
                     <div className="step-card">
-                        <img src="https://img.icons8.com/ios-filled/100/388e3c/salad.png" alt="Meal" />
+                        <img src={salad} alt="Meal" />
                         <h3>Get Custom Meals</h3>
                         <p>Receive daily meal recommendations tailored to you.</p>
                     </div>
                     <div className="step-card">
-                        <img src="https://img.icons8.com/ios-filled/100/388e3c/combo-chart.png" alt="Progress" />
+                        <img src={chart} alt="Progress" />
                         <h3>Track and Improve</h3>
                         <p>See your progress with goals and smart feedback.</p>
                     </div>
                 </div>
+
             </section>
         </div>
     );
