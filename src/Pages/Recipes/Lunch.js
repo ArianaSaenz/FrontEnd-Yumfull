@@ -15,7 +15,7 @@ function Lunch() {
     const recipeImages = {
         broccoliChicken: broccolichicken,
         broccoliShrimp: broccolishrimp,
-        chickenVegetable: chickenvegetable,
+        chickenVeggies: chickenvegetable,
         riceChicken: ricechicken,
         vegetablePasta:vegetablepasta
     };

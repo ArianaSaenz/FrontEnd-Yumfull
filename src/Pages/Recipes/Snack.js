@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 //breakfast images
 import granolabar from './images/granolabar.png';
 import oatsfruit from './images/oatsfruit.png';
-import peanutbuttercookie from './images/peanutbuttercookie.png';
+import peanutcookies from './images/peanutcookies.png';
 import yogurtapple from './images/yogurtapple.png';
 import applecake from './images/applecake.png';
 import './Recipes.css';
@@ -15,7 +15,7 @@ function Snack() {
     const recipeImages = {
     granolaBar: granolabar,
     oatsFruit: oatsfruit,
-    peanutButterCookie: peanutbuttercookie,
+    peanutCookies: peanutcookies,
     yogurtApple: yogurtapple,
     appleCake: applecake
     };

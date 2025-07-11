@@ -7,7 +7,7 @@ import avocadotacos from './images/avocadotacos.png';
 import pupusas from './images/pupusas.png';
 import salvadorantipico from './images/salvadorantipico.png';
 import tunasalad from './images/tunasalad.png';
-import sandwich from './images/sandwich.png';
+import hamsandwich from './images/hamsandwich.png';
 import './Recipes.css';
 
 function Dinner() {
@@ -17,7 +17,7 @@ function Dinner() {
        pupusas:pupusas,
        salvadoranTípico: salvadorantipico,
        tunaSalad: tunasalad,
-       hamSandwich: sandwich
+       hamSandwich: hamsandwich
     };
 
         const settings = {
