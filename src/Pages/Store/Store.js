@@ -65,6 +65,7 @@ function Store() {
                         <h5>{price}</h5>
                         <h4>See store</h4>
                         <button onClick={() => navigate("/products")}>+</button>
+                        
                         </div>
                     ))}
             </section>

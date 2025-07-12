@@ -12,14 +12,18 @@ import { CgArrowUpO } from "react-icons/cg";
 import { IoArrowUndoCircle } from "react-icons/io5";
 import { CgShoppingCart } from "react-icons/cg";
 
-
 function Products() {
     const navigate = useNavigate();
+
+    const handlePurchaseClick = () => {
+        window.open('https://www.superselectos.com/products?category=012700048&productId=10491', '_blank');
+    };
+
     return (
         <div className="product-page">
             <main className="product-main">
-                < button className="back-button" onClick={() => navigate("/Store")}>
-                    < IoArrowUndoCircle />
+                <button className="back-button" onClick={() => navigate("/Store")}>
+                    <IoArrowUndoCircle />
                 </button>
 
                 <section className="product-details">
@@ -43,16 +47,13 @@ function Products() {
                                     Crunchy and green, this veggie fits into any cozy recipe. From quick stir-fries to slow Sunday meals it’s always a good idea.
                                 </p>
                             </div>
-
-
-
                         </div>
                     </div>
                 </section>
 
                 <section className="purchase-section">
                     <p>You can easily find the stores that have available this product</p>
-                    <button className="purchase-button">
+                    <button className="purchase-button" onClick={handlePurchaseClick}>
                         Purchase <CgShoppingCart />
                     </button>
                 </section>
@@ -81,7 +82,7 @@ function Products() {
                             <p>$1.00 - $2.00</p>
                         </div>
                         <div className="veggie-card">
-                            <img src={tomato} alt='tomate' />
+                            <img src={tomato} alt='tomato' />
                             <p>Tomato</p>
                             <p>$0.15 - $0.50</p>
                         </div>
