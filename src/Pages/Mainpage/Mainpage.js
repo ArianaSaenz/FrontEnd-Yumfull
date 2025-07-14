@@ -5,7 +5,8 @@ import carne from './images/carne.png';
 import fruitsalad from './images/fruitsalad.png';
 import pasta from './images/pasta.png';
 import plato from './images/plato.png';
-import Logo from './images/Logo.jpg'
+import Logo from './images/Logo.jpg';
+import { Link } from 'react-router-dom';
 
 function Mainpage() {
     return (
@@ -20,7 +21,7 @@ function Mainpage() {
                         <br />
                         your feeding?
                     </h1>
-                    <button className="btn-start">Start now!</button>
+                    <Link to="/Register"><button className="btn-start">Start now!</button></Link>
                 </div>
                 <div className="hero-image-container">
                     <img
