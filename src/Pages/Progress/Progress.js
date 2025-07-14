@@ -7,7 +7,6 @@ function Progress() {
     return (
         <div className="container py-4">
             <div className="row">
-                {/* Left Panel */}
                 <div className="col-md-6">
                     <section className="mb-4">
                         <div className="ad">Your goals</div>
@@ -45,7 +44,6 @@ function Progress() {
                     </section>
                 </div>
 
-                {/* Right Panel */}
                 <div className="col-md-6">
                     <section className="mb-4">
                         <div className='ad'><span className="text-success">Top 5 Healthiest</span> users of the week</div>

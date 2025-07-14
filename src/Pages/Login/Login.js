@@ -3,6 +3,7 @@ import fruittoast from './imagenes/fruittoast.png';
 import oatsfruit from './imagenes/oatsfruit.png';
 import pupusas from './imagenes/pupusas.png';
 import './Login.css';
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
@@ -49,9 +50,10 @@ function Login() {
             placeholder="Enter your password"
           />
         </div>
-        <button type="submit" className="submit-button">
+        <Link to="/HomePage" ><button type="submit" className="submit-button">
           Log In
         </button>
+        </Link>
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ export function NavBar() {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav w-100 justify-content-evenly align-items-center">
                         <li className="nav-item">
-                            <Link className={`nav-link ${isActive("/") ? "nav-active" : ""}`} to="/">
+                            <Link className={`nav-link ${isActive("/") ? "nav-active" : ""}`} to="/HomePage">
                                 Home
                             </Link>
                         </li>
