@@ -3,6 +3,7 @@ import fruittoast from './Imagenes/fruittoast.png';
 import eggberries from './Imagenes/eggberries.png'; 
 import pupusas from './Imagenes/pupusas.png';
 import './Register.css';
+import { Link } from 'react-router-dom';
 
 
 function Register() {
@@ -73,9 +74,10 @@ function Register() {
           />
         </div>
 
-        <button type="submit" className="submit-button">
+        <Link to="/Login"><button type="submit" className="submit-button">
           Register
         </button>
+        </Link>
       </div>
     </div>
   );

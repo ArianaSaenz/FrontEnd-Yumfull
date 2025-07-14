@@ -1,6 +1,7 @@
 import './Mainpage.css';
 import girls from './images/girls.png';
 import Bowl from './images/Bowl.png';
+import { Link} from "react-router-dom"
 
 function Mainpage() {
     return (
@@ -8,11 +9,11 @@ function Mainpage() {
             <section className="hero-section">
                 <div className="hero-content">
                     <h1>
-                        Ready to IMPROVE
+                           Ready to IMPROVE
                         <br />
-                        your feeding?
+                           your feeding?
                     </h1>
-                    <button className="btn-start">Start now!</button>
+                    <Link to="/Register" ><button className="btn-start">Start now!</button></Link>
                 </div>
                 <div className="hero-image-container">
                     <img
